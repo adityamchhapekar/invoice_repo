@@ -1,0 +1,207 @@
+
+.loader{
+	display: none;
+text-shadow: 2px 2px green;
+position: absolute;
+background:pink ; 
+color: white ; 
+/*text-align: justify;*/
+border:12px solid black;
+border-radius:50% ;
+border-top: 12px solid cadetblue;
+border-right:12px solid hotpink; 
+border-bottom:12px solid green;
+border-left: 12px solid grey;
+height: 50px;
+width: 50px;
+		margin-top: 25%;
+		margin-right: 50%;
+		margin-bottom: 25% ;
+		margin-left: 50% ;
+
+-webkit-animation : spin 1.2s linear infinite;
+animation: spin 1.2s linear infinite ;
+
+}
+@keyframes spin {
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes spin {
+	0%{-webkit-transform: rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg);}
+}
+
+
+
+
+
+.succ , .error{
+	width: 100%;
+	position: absolute;
+}
+
+ .discription1{
+	margin-top: 6px;
+	font-size: 1.5em;
+	font-style: italic;
+	text-align: center;
+	box-shadow: 1px 2px 2px 3px grey;
+
+	border-style: solid;
+	border-color: gold;
+	border-radius: 21px;
+}
+.discription1:hover{
+	transform:rotateX(360deg);
+	transition: 1.2s;
+}
+img{
+	max-height: 100%;
+	max-width: 100%;
+}
+	
+/*css for login register */
+	 #form_div,#login-form-div{
+		padding-left: 50% ;
+		text-align: center;
+	}
+	.main{
+		display: none;
+		background: url('img_folder/PicsArt_Register.png');
+		border-image-width: 100%; 
+		background-repeat: no-repeat;
+		padding: 12px;
+		border-style: solid;
+		border-color: lightblue;
+		border-radius: 12px;
+	}
+	h3{
+		font-size: 26PX;
+		font-family: monospace;
+		text-shadow: 2px 2px lightblue;
+	}
+	.f_c{background: transparent;
+		color: red;
+		text-shadow: 1px 2px gold;
+		letter-spacing: 2px;
+		font-family:cursive;
+		border-color: transparent;
+	}
+	.f_c:hover,.f_c:focus{background: aqua;
+		color: black;
+		font-size: 20px;
+		border-top-right-radius:20px;
+		border-bottom-left-radius:20px;
+
+	}
+	.f_c[placeholder]{font-size: 20px;}
+.login-div{
+	display: none;
+	background: url("img_folder/PicsArt_Login.png") ;
+	
+	background-repeat: no-repeat;
+		padding-top: 12px;
+		border-style: solid;
+		border-color: lightblue;
+		border-radius: 12px;
+}
+.login-div h3{
+	text-align: center;
+}
+
+
+/*home_page.php*/
+
+#close-nav{
+	color: hotpink;
+position: absolute;
+font-size: 35px;
+text-decoration: none;
+	top: 0;
+	right: 26px;
+
+}
+.menu-bar {
+	border-top-right-radius: 20px;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top:50px;
+  left:-6px;
+
+		border-style: solid;
+		border-color: goldenrod ;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 1.2s;
+  padding-top: 60px;
+}
+.menu-bar ul{
+text-align: center;
+	padding: 12px;
+}
+.profile-div{
+	width: 100%;
+	height: auto;
+	padding-left: 21px;
+	background-color: white;
+	letter-spacing: 2.5px;
+	box-shadow: 2px 2px 2px 2px goldenrod;
+	border-style: solid;
+	border-color: cadetblue;
+	border-radius: 6px;
+	/*text-align: center;*/
+}
+li{margin: 12px;
+
+}
+ ul li:hover{
+	background-color: goldenrod;
+	color: white;
+	border-top-right-radius:12px;
+	border-bottom-left-radius:12px;
+	font-size: 26px;
+	transform: translate(20px);
+}
+.what{position: fixed;}
+	ul{list-style: none;}
+	#head-div{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border-style: solid;
+		border-color: cadetblue;
+		border-radius: 12px;
+		background-color: violet;
+		margin-bottom: 6px;
+	}
+#h-style{
+	letter-spacing: 2px;
+		color: white;
+		animation: type 3s steps(9, start);
+			animation-iteration-count:5;
+		animation-delay: 2s ;
+		animation-direction:  alternate-reverse;
+		overflow: hidden;
+		font-family:serif;
+		white-space: nowrap;
+		border-right: 4px solid lightblue;
+}
+
+
+@keyframes type{
+	50%{width: 0ch ; }
+	100%{width: 9ch ;}
+}
+.l-r{
+
+	float: right;
+	margin-right: 120px;
+	word-spacing: 12px;
+	padding-bottom: 12px;
+	font-size: 20px;
+
+}
+
